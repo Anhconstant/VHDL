@@ -1,0 +1,12 @@
+|Control_Servo_Out
+sig_out => LessThan0.IN9
+sig_out => LessThan0.IN10
+CLK_1ms => PWM_Servo_Out~reg0.CLK
+CLK_1ms => counter[0].CLK
+CLK_1ms => counter[1].CLK
+CLK_1ms => counter[2].CLK
+CLK_1ms => counter[3].CLK
+CLK_1ms => counter[4].CLK
+PWM_Servo_Out <= PWM_Servo_Out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

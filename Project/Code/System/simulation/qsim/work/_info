@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Acer\Downloads\CODE_FPGA_22\CODE_FPGA_22\System\simulation\qsim
+vSystem
+Z1 IaBgbC@1Wn2JBGWUU?zKzS0
+Z2 VP;_C<]Y?Ui`;Km_3Z8Fj50
+Z3 dC:\Users\Acer\Downloads\CODE_FPGA_22\CODE_FPGA_22\System\simulation\qsim
+Z4 w1717955980
+Z5 8System.vo
+Z6 FSystem.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|System.vo|
+Z9 o-work work -O0
+Z10 n@system
+!i10b 1
+Z11 !s100 E=:n:97IgmF3@jE>39O`D3
+!s85 0
+Z12 !s108 1717955981.262000
+Z13 !s107 System.vo|
+!s101 -O0
+vSystem_vlg_check_tst
+!i10b 1
+Z14 !s100 7FJgZRZRKo`hG_<YjAMah2
+Z15 IkOHm]Y6C8az;CKlWbC4d@1
+Z16 VCc^E4RBeJZ<W_HoSl9zNC0
+R3
+R4
+Z17 8Waveform.vwf.vt
+Z18 FWaveform.vwf.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z19 !s108 1717955981.329000
+Z20 !s107 Waveform.vwf.vt|
+Z21 !s90 -work|work|Waveform.vwf.vt|
+!s101 -O0
+R9
+Z22 n@system_vlg_check_tst
+vSystem_vlg_sample_tst
+!i10b 1
+Z23 !s100 2g96_99MeE5l?YCEYH_1Z2
+Z24 IS[[Gkn88dl]dRbh9m:maF3
+Z25 VRBTdV?TJLT^_I7zloQj3>0
+R3
+R4
+R17
+R18
+L0 29
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9
+Z26 n@system_vlg_sample_tst
+vSystem_vlg_vec_tst
+!i10b 1
+!s100 ^O;Cg6W=`Ijf;d96nk6o23
+IkZ]GO1UVI3jF3W9UKJfNn0
+Z27 V7`EaV`9@G4E]jBHFNHikH0
+R3
+R4
+R17
+R18
+Z28 L0 604
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9
+Z29 n@system_vlg_vec_tst

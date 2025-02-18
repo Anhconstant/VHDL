@@ -1,0 +1,14 @@
+
+State Machine - |System|Sensor_Unit:B0|st_out
+Name st_out.delay_out st_out.countdown st_out.waiting_out st_out.start_out 
+st_out.start_out 0 0 0 0 
+st_out.waiting_out 0 0 1 1 
+st_out.countdown 0 1 0 1 
+st_out.delay_out 1 0 0 1 
+
+State Machine - |System|Sensor_Unit:B0|st_in
+Name st_in.delay_in st_in.countup st_in.waiting_in st_in.start_in 
+st_in.start_in 0 0 0 0 
+st_in.waiting_in 0 0 1 1 
+st_in.countup 0 1 0 1 
+st_in.delay_in 1 0 0 1 

@@ -1,0 +1,34 @@
+|test
+clk => ~NO_FANOUT~
+data_in[0] => Div0.IN10
+data_in[0] => donvi_ascii[0].DATAIN
+data_in[1] => Div0.IN9
+data_in[1] => Add1.IN14
+data_in[2] => Div0.IN8
+data_in[2] => Add1.IN13
+data_in[3] => Div0.IN7
+data_in[3] => Add1.IN12
+data_in[4] => Div0.IN6
+data_in[4] => Add1.IN11
+data_in[5] => Div0.IN5
+data_in[5] => Add1.IN10
+data_in[6] => Div0.IN4
+data_in[6] => Add1.IN9
+chuc_ascii[0] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+chuc_ascii[1] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+chuc_ascii[2] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+chuc_ascii[3] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+chuc_ascii[4] <= <VCC>
+chuc_ascii[5] <= <VCC>
+chuc_ascii[6] <= <GND>
+chuc_ascii[7] <= <GND>
+donvi_ascii[0] <= data_in[0].DB_MAX_OUTPUT_PORT_TYPE
+donvi_ascii[1] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+donvi_ascii[2] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+donvi_ascii[3] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+donvi_ascii[4] <= <VCC>
+donvi_ascii[5] <= <VCC>
+donvi_ascii[6] <= <GND>
+donvi_ascii[7] <= <GND>
+
+

@@ -1,0 +1,165 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\fpga\fpgadownload\fpgaquyettam\Group Project\Led_Control\simulation\qsim
+vClock_Devider
+Z1 !s100 BkAkM7?`KUic5JUFOS^QT1
+Z2 IPnE;mz[j9iNamz7ZmVcT:0
+Z3 Vf^;5_?4_GPiMHGlPm5J?c0
+Z4 dD:\fpga\fpgadownload\fpgaquyettam\Group Project\Led_Control\simulation\qsim
+Z5 w1674451420
+Z6 8Led_Control.vo
+Z7 FLed_Control.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|Led_Control.vo|
+Z10 o-work work -O0
+Z11 n@clock_@devider
+Z12 !s108 1674451420.733000
+Z13 !s107 Led_Control.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vClock_Devider_vlg_check_tst
+Z14 !s100 RQN1^D5j[_XbE>k;3Q`V=3
+Z15 I6dbI16OYd<P0_8IbknZ>]1
+Z16 VOEzIRlKnH81Y[NIRkjHW;1
+R4
+Z17 w1674451419
+Z18 8Led_Control.vt
+Z19 FLed_Control.vt
+L0 57
+R8
+r1
+31
+Z20 !s108 1674451420.790000
+Z21 !s107 Led_Control.vt|
+Z22 !s90 -work|work|Led_Control.vt|
+R10
+Z23 n@clock_@devider_vlg_check_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vClock_Devider_vlg_sample_tst
+Z24 !s100 QBX^ID_e^A4C_G^GcZ[mi1
+Z25 IT^:7e3i64nQ^50=M2nU[K3
+Z26 VlX3J2hjBSXzYalRBGBI?P2
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+31
+R20
+R21
+R22
+R10
+Z27 n@clock_@devider_vlg_sample_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vClock_Devider_vlg_vec_tst
+Z28 ISH2XXf[l3`8m]mMneInic1
+Z29 VS];mS9mMg2FiL[k]50]m`0
+R4
+R17
+R18
+R19
+Z30 L0 152
+R8
+r1
+31
+R20
+R21
+R22
+R10
+Z31 n@clock_@devider_vlg_vec_tst
+Z32 !s100 ZEe[A[P79Y0kzg<]159JL1
+!i10b 1
+!s85 0
+!s101 -O0
+vLed_Control
+Z33 IliA6U6Zb_>c`@@cd==T1W0
+Z34 V>eNDGWlAR?hWccNKdAbPa1
+Z35 dC:\Users\Acer\Downloads\CODE_FPGA_22\CODE_FPGA_22\Led_Control\simulation\qsim
+Z36 w1717393250
+R6
+R7
+L0 31
+R8
+r1
+31
+R9
+R10
+Z37 n@led_@control
+!i10b 1
+Z38 !s100 E3_Ke49W]6V@DP=A3YFKX3
+!s85 0
+Z39 !s108 1717393251.925000
+R13
+!s101 -O0
+vLed_Control_vlg_check_tst
+!i10b 1
+!s100 F_g6Cfzhb:aQlWDU4TbYY3
+I^McJ79X6CT3ocki9_Fni?3
+V2PePk_>l?DN<GbCj>;Zl[0
+R35
+R36
+Z40 8Waveform.vwf.vt
+Z41 FWaveform.vwf.vt
+L0 61
+R8
+r1
+!s85 0
+31
+Z42 !s108 1717393251.994000
+Z43 !s107 Waveform.vwf.vt|
+Z44 !s90 -work|work|Waveform.vwf.vt|
+!s101 -O0
+R10
+n@led_@control_vlg_check_tst
+vLed_Control_vlg_sample_tst
+!i10b 1
+!s100 E=^IIBXKI83V`B;06jZVe0
+I<VZZo>Tb@2jkd9TA?T1T@3
+Vocf7[MmgN2]JPlN[^W?]i3
+R35
+R36
+R40
+R41
+L0 29
+R8
+r1
+!s85 0
+31
+R42
+R43
+R44
+!s101 -O0
+R10
+n@led_@control_vlg_sample_tst
+vLed_Control_vlg_vec_tst
+!i10b 1
+!s100 ZZ^HJ=lRlk9I9Vo3THe_c1
+IXPKhWU2IfDHHiGMVlecPi3
+Vi9M9_aFPMGo=HG<fHiXId0
+R35
+R36
+R40
+R41
+L0 183
+R8
+r1
+!s85 0
+31
+R42
+R43
+R44
+!s101 -O0
+R10
+n@led_@control_vlg_vec_tst

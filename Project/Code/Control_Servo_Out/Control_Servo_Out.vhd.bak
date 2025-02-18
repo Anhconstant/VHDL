@@ -1,0 +1,40 @@
+LIBRARY ieee;
+use ieee.std_logic_1164.all; 
+LIBRARY std; 
+USE std.standard.all; 
+LIBRARY work;
+USE work.all;
+
+entity Control_Servo_In is port(
+sig_in : in std_logic;
+CLK_1ms : in std_logic;
+PWM_Servo_In: out std_logic
+);
+end Control_Servo_In;
+
+architecture ACT of Control_Servo_In  is
+begin
+	process(CLK_1ms)
+	variable counter: integer range 0 to 20 := 0; --tao xung 20ms
+	variable duty: integer range 0 to 15:= 0;
+	begin
+		if (rising_edge(CLK_1ms)) then
+			counter:= counter + 1;
+			if (sig_in = '1') then
+				duty := 10; -- 1ms = 0 deg
+			else
+				duty := 15; -- 1,5ms = 90 deg
+			end if;
+			
+			if (counter <= duty) then
+				PWM_Servo_In <= '1';
+			else
+				PWM_Servo_In <= '0';
+			end if;
+			
+			if (counter = 20) then
+				counter:= 0;
+			end if;
+		end if;
+	end process;
+end ACT;

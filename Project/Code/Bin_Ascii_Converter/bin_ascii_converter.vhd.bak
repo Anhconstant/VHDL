@@ -1,0 +1,27 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use ieee.std_logic_unsigned.all;
+USE ieee.numeric_std.ALL;
+use ieee.std_logic_arith.all;
+
+entity bin_to_ascii is
+port(
+data_in : in STD_LOGIC_VECTOR (7 downto 0);
+lcd_ascii_most : out  STD_LOGIC_VECTOR (7 downto 0);
+lcd_ascii_least: out std_LOGIC_VECTOR(7 downto 0)
+);
+end bin_to_ascii;
+ architecture haha of bin_to_ascii is
+
+ signal thap_phan: integer range 0 to 90;
+ signal hang_chuc: integer range 0 to 9;
+ signal hang_don_vi: integer range 0 to 9;
+
+ begin
+    thap_phan <=CONV_INTEGER(data_in);
+	 hang_chuc <= thap_phan / 10;
+	 hang_don_vi <= thap_phan-(10*hang_chuc);
+	 lcd_ascii_most<="0011" & CONV_STD_LOGIC_VECTOR(hang_chuc,4);
+
+	 lcd_ascii_least<="0011" & CONV_STD_LOGIC_VECTOR(hang_don_vi,4);
+			  end haha;

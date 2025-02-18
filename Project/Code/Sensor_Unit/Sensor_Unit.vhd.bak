@@ -1,0 +1,20 @@
+library ieee;
+use ieee.std_logic_1164.all; --khai bao thu vien va package su dung
+
+entity Sensor_Unit is
+port(
+CLK_2ms: in std_logic; -- input la xung 500Hz da tao
+sensor_in, sensor_out: in std_logic;
+sig_in, sig_out: out std_logic;
+count_car: out integer
+);
+end Sensor_Unit;
+
+architecture ACT of Sensor_Unit is
+	begin
+		process(CLK_2ms)
+		if (rising_edge(CLK_2ms))
+			
+			
+		end process;
+end ACT;

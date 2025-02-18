@@ -1,0 +1,102 @@
+library ieee;
+use ieee.std_logic_1164.all;
+LIBRARY std; 
+USE std.standard.all; 
+LIBRARY work;
+USE work.all;
+entity CombineV2 is
+port(
+	clk: in std_logic;
+   ------dau vao cam bien-------
+	sensor_in : in std_LOGIC;
+	sensor_out : in std_LOGIC;
+	--------------LED----------
+	Led_in, Led_out: out std_LOGIC;
+	------------servo----------
+	out_servo_in: out std_LOGIC;
+	out_servo_out: out std_LOGIC;
+   -----------------UART-----------
+   Tx: OUT STD_LOGIC
+);
+end CombineV2;
+
+architecture ACT of CombineV2 is
+
+signal countcar_temp : integer range 0 to 50 := 0;
+signal signal_in_temp: std_logic;
+signal signal_out_temp:std_logic;
+signal start_uart_temp: std_LOGIC;
+
+component control_servo_in is
+ port(
+sig_in : in std_logic;
+CLK : in std_logic;
+PWM_Servo_In: out std_logic
+);
+end component;
+
+component control_servo_out is
+port(
+sig_out : in std_logic;
+CLK : in std_logic;
+PWM_Servo_Out: out std_logic
+);
+end component;
+
+component Sensor_Unit is
+port ( 
+CLK: in std_logic; -- input la xung da tao
+sensor_in: in std_LOGIC;
+sensor_out: in std_logic;
+sig_in: out std_LOGIC;
+sig_out: out std_logic;
+count_car: out integer
+);
+end component;
+
+component UART_TX
+port (	
+	START_UART : IN STD_LOGIC;
+	CLK : IN STD_LOGIC;
+	Count_Car: IN integer range 0 to 50;
+	TX : OUT STD_LOGIC := '1'
+);
+end component;
+
+component Led_Control is
+port (
+sig_in: in std_logic;
+sig_out: in std_logic;
+CLK: in std_logic;
+led_in: out std_logic;
+led_out: out std_logic
+);
+end component;
+
+component MyNOR is
+port (
+sig_in: in std_logic;
+sig_out: in std_LOGIC;
+start_UART: out std_logic
+);
+end component;
+
+begin
+
+b0: control_servo_in
+   port map (signal_in_temp,CLK,out_servo_in);--
+b1: control_servo_out
+	port map(signal_out_temp,CLK,out_servo_out);--
+b2: Sensor_Unit
+	port map (CLK,sensor_in, sensor_out,signal_in_temp, signal_out_temp, countcar_temp);--
+b3: UART_TX
+   port map (start_uart_temp, CLK, countcar_temp,TX);--
+b4: Led_Control
+	port map (signal_in_temp, signal_out_temp, CLK, led_in, led_out);--
+b5: MyNOR
+   port map (signal_in_temp, signal_out_temp, start_uart_temp);
+
+end ACT;
+
+
+

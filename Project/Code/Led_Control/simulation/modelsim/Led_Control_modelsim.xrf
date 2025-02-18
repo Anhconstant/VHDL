@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Acer/Downloads/CODE_FPGA_22/CODE_FPGA_22/Led_Control/Led_Control.vhd
+source_file = 1, C:/Users/Acer/Downloads/CODE_FPGA_22/CODE_FPGA_22/Led_Control/db/Led_Control.cbx.xml
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = Led_Control
+instance = comp, \CLK~I , CLK, Led_Control, 1
+instance = comp, \sig_in~I , sig_in, Led_Control, 1
+instance = comp, \led_in~reg0 , led_in~reg0, Led_Control, 1
+instance = comp, \sig_out~I , sig_out, Led_Control, 1
+instance = comp, \led_out~reg0 , led_out~reg0, Led_Control, 1
+instance = comp, \led_in~I , led_in, Led_Control, 1
+instance = comp, \led_out~I , led_out, Led_Control, 1

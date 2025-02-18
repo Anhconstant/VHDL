@@ -1,0 +1,7 @@
+
+State Machine - |CombineV2|UART_TX:b3|state_uart
+Name state_uart.STOP_BIT state_uart.DATA_BITS state_uart.START_BIT state_uart.IDLE 
+state_uart.IDLE 0 0 0 0 
+state_uart.START_BIT 0 0 1 1 
+state_uart.DATA_BITS 0 1 0 1 
+state_uart.STOP_BIT 1 0 0 1 

@@ -1,0 +1,11 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Led_Control is port (
+sig_in, sig_out: in std_logic;
+CLK_2ms: in std_logic;
+led_in, led_out: out std_logic
+);
+end Led_Control;
+
+
